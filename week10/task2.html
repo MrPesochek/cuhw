@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal {
+      position: relative;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 400px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ddd;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .modal-header {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .modal-description {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    .modal-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .btn-cancel {
+      padding: 8px 16px;
+      background-color: #ddd;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-save {
+      padding: 8px 16px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<div class="modal-overlay">
+  <div class="modal">
+    <button class="close-btn">X</button>
+    <div class="modal-header">Заголовок</div>
+    <div class="modal-description">
+      <p>Описание</p>
+    </div>
+    <div class="modal-buttons">
+      <button class="btn-cancel">Отменить</button>
+      <button class="btn-save">Сохранить</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
